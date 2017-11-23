@@ -1,0 +1,16 @@
+{
+  "name": "christmas-rails",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.0.2",
+    "bootstrap": "3",
+    "coffeescript": "1.12.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "webpack-dev-server": "^2.9.4"
+  }
+}

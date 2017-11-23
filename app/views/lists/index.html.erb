@@ -1,0 +1,38 @@
+<div class="container">
+  <%= image_tag "noel.jpg", alt: "Pere noel et son rene" %>
+  <h1>Tirage au sort</h1>
+</div>
+
+<div class="container">
+  <form id="form">
+    <div class="form-group">
+      <input type="text" class="form-control" id="inputnames" placeholder="Entrer un nouveau prénom">
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+  </form>
+</div>
+
+<div class="container">
+  <h4>Qui ?</h4>
+  <ol id="liste">
+  </ol>
+</div>
+
+<div class="container">
+  <button type="submit" class="btn btn-primary" id="melange">Melanger</button>
+
+  <!-- <button type="submit" class="btn btn-danger" id="refresh">Rafraichir</button> -->
+
+  <div id="create_ul_cadeau">
+
+  </div>
+</div>
+
+<div class="howitworks">
+  <h4>Comment ça marche ?</h4>
+  <p>
+    Entrer le prénom de chaque participant, puis clique sur "Melanger".
+    <br/>
+    Impossible de supprimer un prénom, il vous faudra rafraichir la page pour recommencer.
+  </p>
+</div>
