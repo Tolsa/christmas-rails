@@ -1,10 +1,5 @@
-function ClearFields() {
+function tirage(){
 
-     document.getElementById("textfield").value = "";
-}
-
-
-function addNameToTheList() {
   const form = document.getElementById('form');
   const array = [];
 
@@ -16,17 +11,17 @@ function addNameToTheList() {
     liste.insertAdjacentHTML('afterend', `<li>${names}</li>`)
     array.push(names);
   });
-}
 
-function melangeTheNames() {
+
   const button = document.getElementById('melange');
+
   button.addEventListener("click", (event) =>{
     event.preventDefault();
 
     document.getElementById("create_ul_cadeau").innerHTML = '<ul id="cadeau"></ul>';
 
-    const arr1 = array.slice();
-    const arr2 = array.slice();
+    const arr1 = array.slice(),
+          arr2 = array.slice();
 
     arr1.sort(function() { return 0.5 - Math.random();});
     arr2.sort(function() { return 0.5 - Math.random();});
@@ -44,15 +39,8 @@ function melangeTheNames() {
         document.getElementById('cadeau').innerHTML += `<li class="delete">${name1} offre un cadeau à ${name2}</li>`;
     }
   });
+
 }
 
-export { addNameToTheList };
-export { melangeTheNames };
+export { tirage };
 
-// const refresh = document.getElementById('refresh');
-
-// refresh.addEventListener("click", (event) =>{
-//  const remove = document.getElementById('cadeau');
-//  remove.remove()
-
-// });
