@@ -15,16 +15,7 @@
 
 import 'bootstrap';
 
-console.log('Hello World from Webpacker')
-
-import { addNameToTheList } from '../tirage';
-addNameToTheList();
-
-import { melangeTheNames } from '../tirage';
-melangeTheNames();
-
-import { ClearFields } from '../tirage';
-ClearFields();
-
+import { tirage } from ‘../tirage’;
+tirage();
 
 
