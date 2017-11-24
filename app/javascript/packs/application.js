@@ -15,7 +15,7 @@
 
 import 'bootstrap';
 
-import { tirage } from ‘../tirage’;
+import { tirage } from "../tirage";
 tirage();
 
 
