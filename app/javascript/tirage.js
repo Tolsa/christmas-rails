@@ -1,7 +1,13 @@
-const form = document.getElementById('form');
-const array = [];
+function ClearFields() {
+
+     document.getElementById("textfield").value = "";
+}
+
 
 function addNameToTheList() {
+  const form = document.getElementById('form');
+  const array = [];
+
   form.addEventListener("submit", (event) =>{
     event.preventDefault();
     const names = document.getElementById('inputnames').value;
@@ -14,14 +20,13 @@ function addNameToTheList() {
 
 function melangeTheNames() {
   const button = document.getElementById('melange');
-
   button.addEventListener("click", (event) =>{
     event.preventDefault();
 
     document.getElementById("create_ul_cadeau").innerHTML = '<ul id="cadeau"></ul>';
 
-    const arr1 = array.slice(),
-          arr2 = array.slice();
+    const arr1 = array.slice();
+    const arr2 = array.slice();
 
     arr1.sort(function() { return 0.5 - Math.random();});
     arr2.sort(function() { return 0.5 - Math.random();});
