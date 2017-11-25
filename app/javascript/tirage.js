@@ -5,7 +5,7 @@ function tirage(){
     event.preventDefault();
     const names = document.getElementById('inputnames').value;
     const liste = document.getElementById('liste');
-    liste.insertAdjacentHTML('afterend', `<li>${names}</li>`)
+    liste.insertAdjacentHTML('beforeend', `<li>${names}</li>`)
     array.push(names);
   });
   const button = document.getElementById('melange');

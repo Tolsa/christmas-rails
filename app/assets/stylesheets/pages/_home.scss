@@ -1,23 +1,27 @@
 // Specific CSS for your home-page
 
-body {
-  background-color: #7E9FBA;
-}
-
 .container {
   padding: 25px;
   text-align: center;
 }
 
+/* Pere noel image */
+.header-img {
+  img {
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+  }
+}
 
 .howitworks {
   padding-top: 100px;
 }
 
 ul {
-  padding-top: 15px;
   text-decoration: none;
   list-style: none;
+  padding: 0px;
 }
 
 
@@ -25,6 +29,19 @@ ul {
 
 .header {
   padding-bottom: 70px;
+  margin-top: 50px;
+}
+
+.header-title {
+  color: ghostwhite;
+  // text-shadow: 3px 3px 24px black;
+  margin: 15px 0px;
+  // padding: 7px 0px;
+  // box-shadow: 0 6px 6px -5px #222;
+  h1 {
+    border-bottom: 3px solid ghostwhite;
+    padding: 8px 0px;
+  }
 }
 
 /*CONTENT*/
@@ -37,5 +54,10 @@ ul {
 /*HOWITWORKS*/
 
 .content-howitworks {
+  text-align: center;
   margin-top: 50px;
+}
+
+.content-howitworks-text {
+  text-align: center;
 }

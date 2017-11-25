@@ -1,55 +1,55 @@
 
 <div class="wrapper">
   <div class="content-all-website">
-    <div class="header text-center">
-      <div class="header-img">
-        <%= image_tag "noel.png", alt: "Pere noel et son rene" %>
-      </div>
-      <div class="header-title">
-        <h1>Tirage au sort</h1>
-      </div>
+    <div class="header-img">
+      <%= image_tag "noel.png", alt: "Pere noel et son rene" %>
     </div>
 
-    <div class="content-name-list-input text-center">
-      <div class="name-list-input-form">
-        <form id="form">
-          <div class="form-group">
-            <input type="text" class="form-control" id="inputnames" placeholder="Entrer un nouveau prénom">
-          </div>
-          <button type="submit" class="btn btn-primary" id="textfield">Ajouter</button>
-        </form>
-      </div>
-      <div class="name-list-input-print">
-        <h4>Qui ?</h4>
-        <ul id="liste">
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="content-melange-name-list-output text-center">
-      <div class="content-melange-name-list-btn">
-        <button type="submit" class="btn btn-primary" id="melange">Melanger</button>
-      </div>
-      <div class="content-melange-name-list">
-        <div id="create_ul_cadeau">
-
+    <div class="card-floating">
+      <div class="header text-center">
+        <div class="header-title">
+          <h1>Tirage au sort</h1>
         </div>
       </div>
-    </div>
 
-
-
-    <div class="content-howitworks">
-      <div class="content-howitworks-title">
-        <h4>Comment ça marche ?</h4>
+      <div class="content-name-list-input text-center">
+        <div class="name-list-input-form">
+          <form id="form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputnames" placeholder="Entrer un nouveau prénom">
+            </div>
+            <button type="submit" class="btn btn-primary" id="textfield">Ajouter</button>
+          </form>
+        </div>
+        <div class="name-list-input-print">
+          <h4>Liste des participants :</h4>
+          <ul id="liste">
+          </ul>
+        </div>
       </div>
-      <div class="content-howitworks-text">
-        <p>
-          Entrer le prénom de chaque participant, puis cliquer sur "Melanger".
-        <br/>
-          Impossible de supprimer un prénom, il vous faudra rafraichir la page pour recommencer.
-        </p>
+
+      <div class="content-melange-name-list-output text-center">
+        <div class="content-melange-name-list-btn">
+          <button type="submit" class="btn btn-primary" id="melange">Melanger</button>
+        </div>
+        <div class="content-melange-name-list">
+          <div id="create_ul_cadeau">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="content-howitworks">
+        <div class="content-howitworks-title">
+          <h4>Comment ça marche ?</h4>
+        </div>
+        <div class="content-howitworks-text">
+          <p>
+            Entrer le prénom de chaque participant, puis cliquer sur "Melanger".
+          <br/>
+            Impossible de supprimer un prénom, il vous faudra rafraichir la page pour recommencer.
+          </p>
+        </div>
       </div>
     </div>
   </div>
