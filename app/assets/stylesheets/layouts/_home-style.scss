@@ -2,7 +2,7 @@
 .content-all-website {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 175px;
   margin-bottom: 30px;
   margin-left: 100px;
   margin-right: 100px;
@@ -10,11 +10,11 @@
   padding: 30px;
   // background-color: white;
   align-items: center;
-
 }
 
 body {
   background: linear-gradient(170deg, rgba(111, 0, 0, 0.4), rgba(32, 1, 34, 0.5)), asset-url('secret-santa-background.jpg');
   background-size: cover;
+  background-position: center;
 }
 

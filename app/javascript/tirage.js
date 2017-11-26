@@ -7,6 +7,7 @@ function tirage(){
     const liste = document.getElementById('liste');
     liste.insertAdjacentHTML('beforeend', `<li>${names}</li>`)
     array.push(names);
+    document.getElementById('inputnames').value = "";
   });
   const button = document.getElementById('melange');
   button.addEventListener("click", (event) =>{
@@ -27,4 +28,6 @@ function tirage(){
     }
   });
 }
+
+
 export { tirage };

@@ -1,6 +1,9 @@
 .card-floating {
-  background-color: rgba(43, 0, 16, 0.8);
+  background-color: rgba(28, 0, 9, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 600px;
+  box-shadow: 1px 1px 6px rgba(248, 247, 255,0.7),
+            -1px -1px 6px rgba(248, 247, 255,0.7);
 }
