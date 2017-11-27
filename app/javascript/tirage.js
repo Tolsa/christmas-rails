@@ -29,9 +29,24 @@ function tirage(){
               if (name1 === name2){
                 document.getElementById('cadeau').innerHTML += `<li class="delete">Oups, veuillez remélanger pour cette fois. Il y a eu un doublon.</li>`;
               };
-        document.getElementById('cadeau').innerHTML += `<li class="delete">${name1} offre un cadeau à ${name2}</li>`;
+        document.getElementById('cadeau').innerHTML += `<li class="delete">${name1} offre un cadeau à <a href=''><p class="hidden">${name2}</p>... par ici pour</a></li>`;
+        document.querySelectorAll('a').forEach((item) => {
+          item.addEventListener("click", (event) => {
+            event.preventDefault();
+            const hiddencontent = item.querySelector('p').innerHTML;
+            swal(`${hiddencontent}`, "doit recevoir un cadeau de ta part!");
+          });
+        });
+
+        // addEventListener("click", (event) => {
+        //   event.preventDefault();
+        //   const contenucache = document.querySelector('.hidden').innerText;
+        //   console.log(contenucache);
+        //   swal(`${contenucache}`, "doit recevoir un cadeau de ta part!");
+        // });
     }
   });
+}
 
 export { tirage };
 
