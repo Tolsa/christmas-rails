@@ -17,5 +17,3 @@ import 'bootstrap';
 
 import { tirage } from "../tirage";
 tirage();
-
-

@@ -41,4 +41,3 @@ function tirage(){
 
 
 export { tirage };
-
