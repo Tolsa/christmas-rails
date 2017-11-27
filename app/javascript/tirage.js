@@ -1,5 +1,4 @@
 function tirage(){
-
   const form = document.getElementById('form');
   const array = [];
   form.addEventListener("submit", (event) =>{
@@ -12,41 +11,40 @@ function tirage(){
   });
 
   const button = document.getElementById('melange');
-
   button.addEventListener("click", (event) =>{
-    event.preventDefault();
-    document.getElementById("create_ul_cadeau").innerHTML = '<ul id="cadeau"></ul>';
+    if (array.length > 3){
 
-    const arr1 = array.slice(),
-          arr2 = array.slice();
 
-    arr1.sort(function() { return 0.5 - Math.random();});
-    arr2.sort(function() { return 0.5 - Math.random();});
-    const cadeau = document.getElementById('cadeau');
-    while (arr1.length) {
-        const name1 = arr1.pop(),
-              name2 = arr2[0] === name1 ? arr2.pop() : arr2.shift();
-              if (name1 === name2){
-                document.getElementById('cadeau').innerHTML += `<li class="delete">Oups, veuillez remélanger pour cette fois. Il y a eu un doublon.</li>`;
-              };
-        document.getElementById('cadeau').innerHTML += `<li class="delete">${name1} offre un cadeau à <a href=''><p class="hidden">${name2}</p>... par ici pour</a></li>`;
-        document.querySelectorAll('a').forEach((item) => {
-          item.addEventListener("click", (event) => {
-            event.preventDefault();
-            const hiddencontent = item.querySelector('p').innerHTML;
-            swal(`${hiddencontent}`, "doit recevoir un cadeau de ta part!");
+      event.preventDefault();
+      document.getElementById("create_ul_cadeau").innerHTML = '<ul id="cadeau"></ul>';
+      const arr1 = array.slice(),
+            arr2 = array.slice();
+
+      arr1.sort(function() { return 0.5 - Math.random();});
+      arr2.sort(function() { return 0.5 - Math.random();});
+
+      const cadeau = document.getElementById('cadeau');
+      while (arr1.length) {
+          const name1 = arr1.pop(),
+                name2 = arr2[0] === name1 ? arr2.pop() : arr2.shift();
+                if (name1 && name2 && name1 == name2){
+                  document.getElementById('cadeau').innerHTML += `<li class="delete">Oups, veuillez remélanger pour cette fois. Il y a eu un doublon.</li>`;
+                };
+          document.getElementById('cadeau').innerHTML += `<li class="delete">${name1} offre un cadeau à <a href=''><p class="hidden">${name2}</p>... par ici pour</a></li>`;
+          document.querySelectorAll('a').forEach((item) => {
+            item.addEventListener("click", (event) => {
+              event.preventDefault();
+              const hiddencontent = item.querySelector('p').innerHTML;
+              swal(`${hiddencontent}`, "doit recevoir un cadeau de ta part!");
+            });
           });
-        });
-
-        // addEventListener("click", (event) => {
-        //   event.preventDefault();
-        //   const contenucache = document.querySelector('.hidden').innerText;
-        //   console.log(contenucache);
-        //   swal(`${contenucache}`, "doit recevoir un cadeau de ta part!");
-        // });
+      }
+    } else {
+      alert('pas assez de noms');
     }
   });
+
 }
 
-export { tirage };
 
+export { tirage };
