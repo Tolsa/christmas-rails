@@ -13,3 +13,10 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+
+/*
+ *= require_self
+ *= require sweetalert2
+ *= require_tree .
+ */

@@ -1,23 +1,31 @@
 // Specific CSS for your home-page
 
-body {
-  background-color: white;
-}
-
 .container {
   padding: 25px;
   text-align: center;
 }
 
+/* Pere noel image */
+.header-img {
+  img {
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    vertical-align: center;
+    margin: -119px 0px 0px -115px;
+    padding: 0px;
+  }
+}
 
 .howitworks {
   padding-top: 100px;
 }
 
 ul {
-  padding-top: 15px;
   text-decoration: none;
   list-style: none;
+  padding: 0px;
 }
 
 
@@ -25,17 +33,77 @@ ul {
 
 .header {
   padding-bottom: 70px;
+  margin-top: 105px;
+}
+
+.header-title {
+  color: ghostwhite;
+  // text-shadow: 3px 3px 24px black;
+  margin: 15px 0px;
+  // padding: 7px 0px;
+  // box-shadow: 0 6px 6px -5px #222;
+  h1 {
+    // border-bottom: 3px solid ghostwhite;
+    // padding: 8px 0px;
+    font-size: 50px;
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 6px;
+  }
 }
 
 /*CONTENT*/
 
 .name-list-input-print {
   margin-top: 20px;
+  color: ghostwhite;
+}
+
+#liste {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 16px;
+  color: #e2c9d3;
+  letter-spacing: 1px;
+  height: 60px;
+  margin-bottom: 20px;
+  overflow: scroll;
+  line-height: 22px;
+}
+
+#cadeau {
+  color: #e2c9d3;
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  height: 68px;
+  margin-top: 10px;
+  padding: 10px 40px 110px;
 }
 
 
 /*HOWITWORKS*/
 
 .content-howitworks {
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 10px;
+  color: ghostwhite;
+}
+
+h4 {
+  font-size: 23px;
+  font-family: "Raleway";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.content-howitworks-text {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 0px 50px 20px 50px;
+  text-align: center;
+  color: rgba(226, 201, 211, 1);
 }

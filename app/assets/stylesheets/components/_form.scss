@@ -1,0 +1,15 @@
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#inputnames {
+  width: 400px;
+  background: none;
+  border: 0px solid rgba(226, 201, 211, 0.8);
+  color: rgba(226, 201, 211, 1);
+  box-shadow: 1px 1px 6px rgba(248, 247, 255, 0.4),
+    -1px -1px 6px rgba(248, 247, 255, 0.4);
+}
